@@ -1,0 +1,60 @@
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$white: #fff;
+$gray-600: #6c757d;
+$gray-800: #343a40;
+$blue-200: #bee1f4;
+
+$colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800,
+  "blue-fond": $blue-200,
+);
+
+.cont{
+  background-color: map-get($map: $colors, $key:blue-fond );
+}
+.logo{
+  max-width: 100px;
+  height: auto;
+  border-radius: 20%;
+}
+.card{
+  background-color: $blue-200;
+
+  .m1{
+    padding: 12px;
+  }
+  img{
+    height: 10%;
+    width: 10%;
+    padding: 3px;
+    background-color: $yellow;
+    border-radius: 50%;
+
+  }
+}
+.sbmt{
+  text-align: center;
+}
+
+
