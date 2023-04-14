@@ -4,6 +4,7 @@
 
 .cont {
   background-color: #f7fd91;
+  height: max-content;
 }
 
 .logo img {
@@ -24,13 +25,11 @@
   color: #006E51;
 }
 .login .m1 {
-  padding: 12px;
+  padding: 8px;
 }
 .login img {
-  height: 10%;
-  width: 10%;
-  padding: 3px;
-  background-color: #20c997;
+  width: 12%;
+  background-color: #36b48e;
   border-radius: 50%;
 }
 
@@ -48,6 +47,14 @@
     transform: translateX(0);
   }
 }
+.f1 {
+  background-color: #f7fd91;
+}
+.f1 .card {
+  background-color: #f7fd91;
+  border: none;
+}
+
 /* styles for Sign Up*/
 .SignUp {
   background-color: #f7fd91;
