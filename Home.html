@@ -43,36 +43,58 @@
         
 
         <section class="d-flex text-center justify-content-center oper ">
-            <div class="mx-4 mt-4 ope-popup "data-popup-target="popup-1">
-                <p>Crear nuevo registro de Tela</p>
-                <a name="" id="" class="btn btn-primary container-fluid" href="#" role="button">Crear</a>
-            </div>
-           <div class="mx-4 mt-4 ope-popup" data-popup-target="popup-2">
-              <p>Gestor de datos</p>
-            <a name="" id="" class="btn btn-primary container-fluid" href="#" role="button">Gestionar</a>
-           </div>
 
-           <div class="mx-4 mt-4 ope-popup"data-popup-target="popup-3">
+            <div class="mx-4 mt-4 open-popup "data-popup-target="popup-1">
+                <p>Crear nuevo registro de Tela</p>
+                <button class="btn btn-primary open-popup" data-popup-target="popup-1">Abrir formulario</button>
+            </div>
+
+            <div class="mx-4 mt-4">
+                <p>Gestor de datos</p>
+                <a name="" class="btn btn-primary container-fluid" href="Est-datos/Datos.html" role="button">Gestionar</a>
+            </div>
+
+
+           <div class="mx-4 mt-4">
             <p>Graficos del Sistema</p>
-            <a name="" id="" class="btn btn-primary container-fluid" href="#" role="button">Estadisticas</a>
+            <a name="" id="" class="btn btn-primary container-fluid" href="Est-datos/Est.html" role="button">Estadisticas</a>
            </div>
 
             
         </section>
-        <div class="popup-overlay" id="popup-overlay"></div>
-        <div class="popup" id="popup-1">
-            <h2>Formulario 1</h2>
-            <button class="close-popup">Cerrar</button>
-        </div>
-        <div class="popup" id="popup-2">
-            <h2>Formulario 2</h2>
-            <button class="close-popup">Cerrar</button>
-        </div>
-        <div class="popup" id="popup-3">
-            <h2>Formulario 3</h2>
-            <button class="close-popup">Cerrar</button>
-        </div>
 
+
+        <div class="popup-overlay" id="popup-overlay"></div>
+
+        <div class="popup" id="popup-1">
+        
+            <h2>Formulario de Calidad de Tela</h2>
+    
+            <form>
+                <div class="form-group">
+                    <label for="dimensiones">Dimensiones:</label>
+                    <input type="text" id="dimensiones" name="dimensiones" placeholder="Ingrese las dimensiones de la tela" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="fecha">Fecha de Registro:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="gramaje">Gramaje:</label>
+                    <input type="number" id="gramaje" name="gramaje" placeholder="Ingrese el gramaje de la tela" required>
+                </div>
+                
+                <!-- Agrega más campos adicionales aquí -->
+                
+                <div class="form-group">
+                    <button type="submit">Guardar</button>
+                </div>
+            </form>
+            <button class="btn btn-secondary close-popup">Cerrar</button>
+        </div>
+       
         <section class="container-fluid imagenes">
             <div class="rot d-flex justify-content-center">
                 <div class="card" style="width: 18rem;">
