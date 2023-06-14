@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        .search-bar {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+        
+        .search-bar input[type="text"] {
+            padding: 10px;
+            width: 200px;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        @media (max-width: 600px) {
+            .search-bar {
+                justify-content: center;
+            }
+            
+            .search-bar input[type="text"] {
+                width: 100%;
+            }
+            
+            table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabla de la Base de Datos</h1>
+    
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Buscar en columnas...">
+    </div>
+    
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Correo electrónico</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>30</td>
+                <td>john.doe@example.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>25</td>
+                <td>jane.smith@example.com</td>
+            </tr>
+            <!-- Agrega más filas de datos aquí -->
+        </tbody>
+    </table>
+
+    <script>
+        const searchInput = document.getElementById('search-input');
+        const table = document.getElementById('data-table');
+        const tableRows = table.getElementsByTagName('tr');
+        console.log(table,tableRows);
+
+        searchInput.addEventListener('keyup', function () {
+            const filter = searchInput.value.toLowerCase();
+
+            for (let i = 1; i < tableRows.length; i++) {
+                const cells = tableRows[i].getElementsByTagName('td');
+                let found = false;
+
+                for (let j = 0; j < cells.length; j++) {
+                    const cell = cells[j];
+
+                    if (cell.innerHTML.toLowerCase().indexOf(filter) > -1) {
+                        found = true;
+                        break;
+                    }
+                }
+                console.log("cells ",cells)
+
+                if (found) {
+                    tableRows[i].style.display = '';
+                } else {
+                    tableRows[i].style.display = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

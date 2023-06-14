@@ -56,12 +56,11 @@ $green-dark:  #006E51;
   }
 .popup {
     display: none;
-    position: fixed;
-    top: 10%;
-    left: 10%;
-    transform: translate(50%, 10%);
-    background-color: #fff;
-    padding: 20px;
+    position:fixed;
+    top: 2%;
+    left: 2%;
+    transform: translate(0%, 0%);
+    background-color: #f0fb59;
     z-index: 10000;
   }
 
