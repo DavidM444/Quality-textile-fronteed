@@ -33,7 +33,7 @@
                 <div class="d-flex">
                     <span class="material-symbols-outlined">
                         groups
-                        </span>
+                    </span>
                     <p>Cargo</p>
                 </div>
                 
@@ -62,45 +62,88 @@
         </section>
 
 
-        <div class="popup-overlay" id="popup-overlay"></div>
+        <div class="popup-overlay container-fluid" id="popup-overlay"></div>
 
         <div class="popup" id="popup-1">
-        
             <h2>Formulario de Calidad de Tela</h2>
-    
-            <form>
-                <div class="form-group">
-                    <label for="dimensiones">Dimensiones:</label>
-                    <input type="text" id="dimensiones" name="dimensiones" placeholder="Ingrese las dimensiones de la tela" required>
-                </div>
+            <div class="container">
+                <div class=" row">
+                    <div class="col">
+                        <form>
+                            <div class="form-group">
+                                <label for="Rollo">rollo</label>
+                                <input type="text" id="rollo" name="rollo" placeholder="Ingrese el numero de rollo " required>
+                            </div>
 
-                <div class="form-group">
-                    <label for="Sistema 4 puntos">Dimensiones:</label>
-                    <input type="text" id="dimensiones" name="dimensiones" placeholder="Ingrese las dimensiones de la tela" required>
-                </div>
+                            <div class="form-group">
+                                <label for="peso">peso</label>
+                                <input type="text" id="peso" name="peso" placeholder="Ingrese las peso de la tela" required>
+                            </div>
 
-                <div class="form-group">
-                    <label for="Escala grises">Dimensiones:</label>
-                    <input type="text" id="dimensiones" name="dimensiones" placeholder="Ingrese las dimensiones de la tela" required>
+                            <div class="form-group">
+                                <label for="Escala grises">grises</label>
+                                <input type="text" id="tipoTela" name="tipoTela" placeholder="Ingrese el tipo de la tela" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="proveeddor">Provedor</label>
+                                <select id="tacos" name="tacos">
+                                    <option value="TextilNova">TextilNova</option>
+                                    <option value="TelasMundo">TelasMundo</option>
+                                    <option value="EleganceFabrics">EleganceFabrics</option>
+                                    <option value="FashionFabrics">FashionFabrics</option>
+                                    <option value="GlobalTextiles">GlobalTextiles</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="fecha">Fecha de Registro:</label>
+                                <input type="date" id="fecha" name="fecha" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="gramaje">Gramaje</label>
+                                <input type="number" id="gramaje" name="gramaje" placeholder="Ingrese el gramaje de la tela" required>
+                            </div>
+                            
+                            <!-- Agrega más campos adicionales aquí -->
+                            
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                                <button class="btn btn-secondary close-popup">Cerrar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="nivelGrises">nivelGrises:</label>
+                                <input type="number" id="nivelGrises" name="nivelGrises" placeholder="Ingrese el nivelGrises de la tela" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="nivelPilling">nivelPilling:</label>
+                                <input type="number" id="nivelPilling" name="nivelPilling" placeholder="Ingrese el nivelPilling de la tela" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="absorcion">absorcion:</label>
+                                <input type="number" id="absorcion" name="absorcion" placeholder="Ingrese el absorcion de la tela" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cuatropuntos">cuatropuntos:</label>
+                                <input type="number" id="cuatropuntos" name="cuatropuntos" placeholder="Ingrese el cuatropuntos de la tela" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Dimensiones</label>
+                            
+                                <input type="number" name="ancho" id="ancho" placeholder="ancho">
+                                <input type="number" name="alto" id="alto" placeholder="alto">
+
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                
-                <div class="form-group">
-                    <label for="fecha">Fecha de Registro:</label>
-                    <input type="date" id="fecha" name="fecha" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="gramaje">Gramaje:</label>
-                    <input type="number" id="gramaje" name="gramaje" placeholder="Ingrese el gramaje de la tela" required>
-                </div>
-                
-                <!-- Agrega más campos adicionales aquí -->
-                
-                <div class="form-group">
-                    <button type="submit">Guardar</button>
-                </div>
-            </form>
-            <button class="btn btn-secondary close-popup">Cerrar</button>
+            </div>
+           
         </div>
        
         <section class="container-fluid imagenes">
