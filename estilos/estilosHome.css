@@ -62,6 +62,13 @@ form {
 .form-group {
   margin-bottom: 20px;
 }
+.form-group label {
+  background-color: #4CAF50;
+}
+.form-group input {
+  width: 55%;
+  background-color: brown;
+}
 
 .form-group label {
   display: block;

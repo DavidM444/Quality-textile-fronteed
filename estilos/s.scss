@@ -6,7 +6,6 @@ $blue: #007bff;
 $pink: #e83e8c;
 $red: #dc3545;
 $orange: #fd7e14;
-$yellow: #ffc107;
 $green: #28a745;
 $green-dark:  #006E51;
 $teal: #36b48e;
@@ -15,7 +14,8 @@ $white: #fff;
 $gray-600: #6c757d;
 $gray-800: #343a40;
 $blue-200: #bee1f4;
-$marron: #f7fd91;
+$marrons: #c7ce4b;
+$marron:#ffe414;
 
 
 
@@ -25,7 +25,6 @@ $colors: (
   "pink":       $pink,
   "red":        $red,
   "orange":     $orange,
-  "yellow":     $yellow,
   "green":      $green,
   "teal":       $teal,
   "cyan":       $cyan,
@@ -101,7 +100,7 @@ $colors: (
   /* styles for Sign Up*/
 
 .SignUp{
-  background-color: $marron;
+  background-color: $marrons;
 }
 .Sp{
   h2{

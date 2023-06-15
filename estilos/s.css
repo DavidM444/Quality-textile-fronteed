@@ -3,7 +3,7 @@
 }
 
 .cont {
-  background-color: #f7fd91;
+  background-color: #ffe414;
   height: max-content;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .login {
-  background-color: #f7fd91;
+  background-color: #ffe414;
   border: none;
 }
 .login h2 {
@@ -48,16 +48,16 @@
   }
 }
 .f1 {
-  background-color: #f7fd91;
+  background-color: #ffe414;
 }
 .f1 .card {
-  background-color: #f7fd91;
+  background-color: #ffe414;
   border: none;
 }
 
 /* styles for Sign Up*/
 .SignUp {
-  background-color: #f7fd91;
+  background-color: #c7ce4b;
 }
 
 .Sp h2 {
@@ -83,27 +83,5 @@
   }
 }
 /*styles for home*/
-.head {
-  background-color: #f7fd91;
-}
-
-.rot img {
-  box-shadow: 0px -1px 39px 26px rgba(0, 0, 0, 0.48);
-  height: 20rem;
-  width: 35rem;
-  margin: 2%;
-}
-
-.imagenes {
-  background-color: #f7fd91;
-}
-
-.oper {
-  background-color: #f7fd91;
-}
-
-footer {
-  background-color: #bdd1de;
-}
 
 /*# sourceMappingURL=s.css.map */

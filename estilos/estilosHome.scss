@@ -71,7 +71,16 @@ $green-dark:  #006E51;
 }
 
 .form-group {
+
     margin-bottom: 20px;
+    label{
+      background-color: #4CAF50;
+      
+    }
+    input{
+      width: 55%;
+      background-color: brown;
+    }
 }
 
 .form-group label {
@@ -102,4 +111,6 @@ $green-dark:  #006E51;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+   
 }
+
