@@ -23,20 +23,15 @@
                 
                 </div>
             </div>
-            <div>
+            <div class="user">
                 <div class="d-flex">
-                    <span class="material-symbols-outlined">
-                        person
-                        </span>
+                    <span class="material-symbols-outlined">person</span>
                     <p>Nombre de Usuario</p>
                 </div>
                 <div class="d-flex">
-                    <span class="material-symbols-outlined">
-                        groups
-                    </span>
+                    <span class="material-symbols-outlined">groups</span>
                     <p>Cargo</p>
                 </div>
-                
             </div>
         </div>
 
@@ -57,10 +52,7 @@
             <p>Graficos del Sistema</p>
             <a name="" id="" class="btn btn-primary container-fluid" href="Est-datos/Est.html" role="button">Estadisticas</a>
            </div>
-
-            
         </section>
-
 
         <div class="popup-overlay container-fluid" id="popup-overlay"></div>
 
@@ -69,21 +61,21 @@
             <div class="container">
             
                    
-                <form class="row"> 
+                <form class="row" id="form"> 
                     <div class="col">
                         <div class="form-group">
-                            <label for="Rollo">rollo</label>
-                            <input type="text" id="rollo" name="rollo" placeholder="Ingrese el numero de rollo " required>
+                            <label for="Rollo">Rollo</label>
+                            <input type="text" id="rollo" name="rollo" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="peso">peso</label>
-                            <input type="text" id="peso" name="peso" placeholder="Ingrese las peso de la tela" required>
+                            <label for="peso">Peso</label>
+                            <input type="text" id="peso" name="peso"required>
                         </div>
 
                         <div class="form-group">
-                            <label for="Escala grises">grises</label>
-                            <input type="text" id="tipoTela" name="tipoTela" placeholder="Ingrese el tipo de la tela" required>
+                            <label for="Escala grises">Grises</label>
+                            <input type="text" id="tipoTela" name="tipoTela" required>
                         </div>
                         
                         <div class="form-group">
@@ -101,33 +93,28 @@
                             <label for="fecha">Fecha de Registro:</label>
                             <input type="date" id="fecha" name="fecha" required>
                         </div>
-                        
-                        
-                        
-                        <!-- Agrega más campos adicionales aquí -->
-                        
-                      
+                       
                     </div>
                     <div class="col">
                         <div class="form-group">
                             <label for="gramaje">Gramaje</label>
-                            <input type="number" id="gramaje" name="gramaje" placeholder="Ingrese el gramaje de la tela" required>
+                            <input type="number" id="gramaje" name="gramaje"  required>
                         </div>
                         <div class="form-group">
-                            <label for="nivelGrises">nivelGrises:</label>
-                            <input type="number" id="nivelGrises" name="nivelGrises" placeholder="Ingrese el nivelGrises de la tela" required>
+                            <label for="nivelGrises">Nivel Grises:</label>
+                            <input type="number" id="nivelGrises" name="nivelGrises" required>
                         </div>
                         <div class="form-group">
-                            <label for="nivelPilling">nivelPilling:</label>
-                            <input type="number" id="nivelPilling" name="nivelPilling" placeholder="Ingrese el nivelPilling de la tela" required>
+                            <label for="nivelPilling">Nivel Pilling:</label>
+                            <input type="number" id="nivelPilling" name="nivelPilling"  required>
                         </div>
                         <div class="form-group">
-                            <label for="absorcion">absorcion:</label>
-                            <input type="number" id="absorcion" name="absorcion" placeholder="Ingrese el absorcion de la tela" required>
+                            <label for="absorcion">Absorcion:</label>
+                            <input type="number" id="absorcion" name="absorcion"  required>
                         </div>
                         <div class="form-group">
-                            <label for="cuatropuntos">cuatropuntos:</label>
-                            <input type="number" id="cuatropuntos" name="cuatropuntos" placeholder="Ingrese el cuatropuntos de la tela" required>
+                            <label for="cuatropuntos">Cuatro Puntos:</label>
+                            <input type="number" id="cuatropuntos" name="cuatropuntos" required>
                         </div>
                         
                     </div>
@@ -135,7 +122,7 @@
                         <div class="form-group">
                             <label for="">Dimensiones</label>
                         
-                            <input type="number" name="ancho" id="ancho" placeholder="ancho">
+                            <input class="col-lg-8" type="number" name="ancho" id="ancho" placeholder="ancho">
                             <input type="number" name="alto" id="alto" placeholder="alto">
 
                         </div>
@@ -169,18 +156,10 @@
                     </div>
                 </form>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary">Guardar</button>
-                    <button class="btn btn-secondary close-popup bg-red">Cerrar</button>
+                    <button type="submit" class="btn btn-primary" form="form">Guardar</button>
+                    <button class="btn btn-danger close-popup">Cerrar</button>
                 </div>
-            </div>        
-                   
-                      
-              
-                    
-                        
-
-                    
-                
+            </div>          
         </div>
        
         <section class="container-fluid imagenes">
@@ -227,8 +206,8 @@
                     
                 </div>
             </div>
+        </footer>
         
-
 </body>
 <script src="index.js" defer></script>
 
