@@ -9,7 +9,7 @@
 }
 
 .head {
-  background-color: #f7fd91;
+  background-color: #87CBB9;
 }
 
 .rot img {
@@ -20,12 +20,12 @@
 }
 
 .imagenes {
-  background-color: #f7fd91;
+  background-color: #87CBB9;
   margin: auto;
 }
 
 .oper {
-  background-color: #f7fd91;
+  background-color: #87CBB9;
 }
 
 footer {
@@ -39,18 +39,22 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(195, 206, 112, 0.87);
   z-index: 9999;
+  overflow-y: auto;
 }
 
 .popup {
   display: none;
   position: fixed;
+  width: 50%;
   top: 2%;
   left: 2%;
   transform: translate(0%, 0%);
   background-color: #f0fb59;
   z-index: 10000;
+  overflow-y: auto;
+  border-radius: 3%;
 }
 
 /* estilos del formmulario*/
@@ -63,16 +67,14 @@ form {
   margin-bottom: 20px;
 }
 .form-group label {
-  background-color: #4CAF50;
-}
-.form-group input {
-  width: 55%;
-  background-color: brown;
-}
-
-.form-group label {
-  display: block;
   margin-bottom: 5px;
+}
+.form-group button {
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .form-group input,
@@ -81,6 +83,7 @@ form {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  background-color: #abcbc3;
 }
 
 .form-group textarea {
@@ -91,13 +94,8 @@ form {
   resize: vertical;
 }
 
-.form-group button {
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.card-body {
+  background-color: #bdf7f4;
 }
 
 /*# sourceMappingURL=estilosHome.css.map */
